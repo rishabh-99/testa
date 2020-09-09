@@ -1,7 +1,7 @@
 
 $(function(){
    	//make connection
-	var socket = io.connect('http://ec2-18-216-173-230.us-east-2.compute.amazonaws.com/:3000')
+	var socket = io.connect('http://ec2-18-216-173-230.us-east-2.compute.amazonaws.com:3000')
 
 	//buttons and inputs
 	var message = $("#message")
