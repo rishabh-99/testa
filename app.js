@@ -35,6 +35,10 @@ io.on('connection', (socket) => {
         socket.username = data.username
     })
 
+    socket.on('login1', (data) => {
+        io.sockets.emit('login1', {message: 'LAAAA'})
+    })
+
     //listen on new_message
     socket.on('new_message', (data) => {
         //broadcast the new message
